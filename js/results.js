@@ -41,21 +41,23 @@ lastSessionRank.forEach((elt) => {
 var playerRankGlobal;
 var globalRankDiv = document.getElementById("global");
 var leadersGlobal = globalRankDiv.getElementsByClassName("leader");
-var posPts = []
+var listPos = []
 for (let i=0; i < leadersGlobal.length; i++) {
     var pos = leadersGlobal[i].getElementsByClassName("number")[0].innerText;
     pos = parseInt(pos.replace(".", ""));
     var pts = leadersGlobal[i].getElementsByClassName("max-pts")[0].innerText;
     pts = parseInt(pts.replace(" pts", ""));
-    posPts.push([pos, pts]);
+    listPos.push(pos);
     if (player["pts"] >= pts) {
         playerRankGlobal = pos;
         break;
     }
 }
 if (typeof(playerRankGlobal) === 'undefined') {
-    if (posPts[posPts.length - 1][0] < 50) {
-        playerRankGlobal = posPts[posPts.length - 1][0] + 1
+    if (listPos.length === 0) {
+        playerRankGlobal = 1;
+    } else if (listPos.length < 100) {
+        playerRankGlobal = listPos.length + 1;
     } else {
         playerRankGlobal = nbMaxGlobal;
     }
