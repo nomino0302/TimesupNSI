@@ -1,0 +1,232 @@
+@font-face {
+    font-family: "Lato Regular";
+    src: url("../assets/fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato Black";
+    src: url("../assets/fonts/Lato/Lato-Black.ttf");
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url("../assets/fonts/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "BebasNeue Bold";
+    src: url("../assets/fonts/BebasNeue/Commercial/TTF/BebasNeue-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Lato Light";
+    src: url("../assets/fonts/Lato/Lato-Light.ttf");
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    border: 0;
+    font-family: "Lato Light", sans-serif;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.first {
+    color: gold;
+}
+
+.second {
+    color: silver;
+}
+
+.third {
+    color: #cd7f32;
+}
+
+.other {
+    color: rgb(124, 33, 184)
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../assets/img/bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 30%;
+}
+
+.rank-box {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: white;
+}
+
+.rank-title {
+    height: 15%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+    border-bottom: 0.15em black dotted;
+}
+
+#left-rank .rank-title {
+    border-right: 0.5em purple dashed;
+}
+
+#right-rank .rank-title {
+    border-left: 0.5em rgb(255, 126, 41) dashed;
+}
+
+.rank-title h2 {
+    font-family: "BebasNeue Bold";
+    font-size: xx-large;
+    text-align: center;
+}
+
+.rank {
+    height: 85%;
+    padding: 0 1% 0 1%;
+    overflow-y: scroll;
+}
+
+#global {
+    border-right: 0.5em purple dashed;
+    border-bottom: 0.5em purple dashed;
+    border-bottom-right-radius: 0.5em;
+}
+
+#session {
+    border-left: 0.5em rgb(255, 126, 41) dashed;
+    border-bottom: 0.5em rgb(255, 126, 41) dashed;
+    border-bottom-left-radius: 0.5em;
+}
+
+.leader {
+    display: flex;
+    height: 15%;
+    border-bottom: 0.15em rgb(56, 53, 53) solid;
+    margin-bottom: 2%;
+    background-color: rgb(246, 243, 243);
+}
+
+.number {
+    width: 10%;
+}
+
+.number p {
+    font-family: "Lato Bold";
+}
+
+.avatar {
+    width: 12%;
+}
+
+.avatar img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.player-name-rank {
+    width: 60%;
+}
+
+.max-pts {
+    width: 18%;
+}
+
+.max-pts p {
+    font-family: "Lato Bold";
+}
+
+.header-text {
+    width: 60%;
+    background-color: rgba(0, 0, 0, .55);
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    height: 90%;
+}
+
+.logo img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.credits {
+    height: 10%;
+}
+
+.credits h3 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.results-zone {
+    background-color: rgba(0, 0, 0, .55);
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5%;
+}
+
+.results-zone p {
+    color: white;
+    background-color: #1e1d1d;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+}
+
+#pts {
+    color: firebrick;
+}
+
+#class-global {
+    color: purple;
+}
+
+#class-session {
+    color: rgb(255, 126, 41);
+}
+
+.button-zone {
+    background-color: rgba(0, 0, 0, .55);
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+#continue {
+    font-family: "BebasNeue Bold";
+    font-size: xx-large;
+    width: 13%;
+    height: 28%;
+    color: white;
+    background: #414141;
+    border-color: white;
+    border-radius: 2em;
+    cursor: pointer;
+}

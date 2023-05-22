@@ -5,6 +5,8 @@ if (player === null && !debug) {
     location.href = "index.php";
 } else if (debug) {
     player = {name: "Arnaud", avatar: "assets/img/avatars/Robot_Avatars_13.png", pts: 0};
+} else {
+    player = JSON.parse(player);
 }
 
 var timePlace = document.getElementById("time");
@@ -16,7 +18,7 @@ var motPlace = document.getElementById("mot");
 var foundButton = document.getElementById("found");
 var passButton = document.getElementById("pass");
 
-var time = 20;
+var time = 5;
 
 challenges = {
     "Mimez :": [

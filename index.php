@@ -19,7 +19,7 @@
                         include_once("php/config.php");
 
                         // Fetch scores (in descending order)
-                        $scores = mysqli_query($mysqli, "SELECT * FROM scores ORDER BY pts DESC limit 50");
+                        $scores = mysqli_query($mysqli, "SELECT * FROM scores ORDER BY pts DESC limit 100");
                         
                         $rank = 1;
                         foreach($scores as $row) {
